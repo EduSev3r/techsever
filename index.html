@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>techSever | Marketing Digital em São Paulo para empresas que querem crescer</title>
-    <meta name="description" content="A techSever desenvolve soluções de marketing digital para empresas e profissionais que querem fortalecer sua presença online. Criação de sites, SEO e mais.">
-    <meta name="keywords" content="marketing digital, criação de sites, SEO, otimização de sites, edição de vídeo, social media, marketing digital em São Paulo">
-    
+    <title>techSever | Marketing Digital no Brasil</title>
+    <meta name="description"
+        content="A techSever desenvolve soluções de marketing digital completas: criação de sites, SEO e estratégias personalizadas para fortalecer sua marca online.">
+    <meta name="keywords"
+        content="marketing digital, criação de sites, SEO, otimização de sites, edição de vídeo, social media, marketing digital">
+        
+    <!-- SEO and Open Graph -->
+    <link rel="canonical" href="https://techsever.com.br/">
+    <meta property="og:title" content="techSever | Marketing Digital no Brasil">
+    <meta property="og:description" content="A techSever desenvolve soluções de marketing digital completas: criação de sites, SEO e estratégias personalizadas para fortalecer sua marca online.">
+    <meta property="og:image" content="https://techsever.com.br/assets/img/hero-bg.webp">
+    <meta property="og:url" content="https://techsever.com.br/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="techSever | Marketing Digital no Brasil">
+    <meta name="twitter:description" content="A techSever desenvolve soluções de marketing digital completas: criação de sites, SEO e estratégias personalizadas para fortalecer sua marca online.">
+    <meta name="twitter:image" content="https://techsever.com.br/assets/img/hero-bg.webp">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
@@ -16,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -40,35 +57,230 @@
             }
         }
     </script>
-    
+
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
+
     <!-- Phosphor Icons (for icons) -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="/assets/img/hero-bg.webp">
+
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://techsever.com.br/#organization",
+        "name": "techSever",
+        "url": "https://techsever.com.br/",
+        "logo": "https://techsever.com.br/assets/img/logo.png",
+        "sameAs": [
+          "https://instagram.com/techsev3r"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://techsever.com.br/#localbusiness",
+        "name": "techSever",
+        "image": "https://techsever.com.br/assets/img/hero-bg.webp",
+        "url": "https://techsever.com.br/",
+        "telephone": "+5532468010830",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Celia Domingues Faustino, 89",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "areaServed": "Atendimento mundial, com foco principal no Brasil e Europa",
+        "priceRange": "$$"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://techsever.com.br/#website",
+        "url": "https://techsever.com.br/",
+        "name": "techSever",
+        "publisher": {
+          "@id": "https://techsever.com.br/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://techsever.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto custa contratar uma empresa de marketing digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O investimento depende do serviço, da complexidade e das necessidades do projeto. Entre em contato pelo WhatsApp para explicar o que você precisa e receber uma avaliação do projeto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto custa criar um site profissional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não existe um valor único para criação de sites, pois cada projeto possui necessidades diferentes. A techSever avalia o objetivo e o escopo antes de definir a solução."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A techSever trabalha com SEO e otimização de sites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Trabalhamos com SEO e otimização de sites para melhorar a estrutura e a presença do site nos mecanismos de busca."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A techSever atende empresas de quais regiões?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A techSever realiza atendimento mundial, com foco principal no Brasil e na Europa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês fazem edição de vídeos para redes sociais?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Realizamos edição de vídeo para empresas, marcas e influenciadores, de acordo com o objetivo e o formato de cada conteúdo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O serviço de social media inclui criação de conteúdo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. A techSever trabalha com criação e gestão de conteúdo para redes sociais, adaptando o trabalho às necessidades e à identidade de cada cliente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais formas de pagamento a techSever aceita?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As condições e formas de pagamento são alinhadas de acordo com cada projeto. Consulte as opções disponíveis diretamente pelo WhatsApp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual é o horário de atendimento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O horário de atendimento não está definido previamente. Para verificar a disponibilidade, entre em contato pelo WhatsApp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como posso contratar a techSever?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "É simples: clique no botão de WhatsApp e explique qual serviço você procura. A partir daí, podemos entender seu projeto e orientar sobre os próximos passos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual é o diferencial da techSever?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nosso trabalho é baseado em alta flexibilidade, qualidade nos produtos desenvolvidos, rapidez na entrega e soluções personalizadas para cada cliente."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Criação de Sites",
+        "description": "Criação de sites profissionais, modernos e personalizados para empresas e profissionais que desejam fortalecer sua presença digital.",
+        "provider": {
+          "@id": "https://techsever.com.br/#organization"
+        },
+        "areaServed": "Atendimento mundial, com foco principal no Brasil e Europa"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Otimização de Sites SEO",
+        "description": "Otimização de sites para melhorar sua presença nos mecanismos de busca e aumentar as oportunidades de ser encontrado no Google.",
+        "provider": {
+          "@id": "https://techsever.com.br/#organization"
+        },
+        "areaServed": "Atendimento mundial, com foco principal no Brasil e Europa"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Edição de Vídeo",
+        "description": "Edição profissional de vídeos para empresas, marcas e influenciadores, com foco em qualidade e comunicação digital.",
+        "provider": {
+          "@id": "https://techsever.com.br/#organization"
+        },
+        "areaServed": "Atendimento mundial, com foco principal no Brasil e Europa"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Social Media",
+        "description": "Criação e gestão de conteúdo para redes sociais, ajudando empresas e influenciadores a fortalecer sua presença e divulgação online.",
+        "provider": {
+          "@id": "https://techsever.com.br/#organization"
+        },
+        "areaServed": "Atendimento mundial, com foco principal no Brasil e Europa"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://techsever.com.br/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://techsever.com.br/"
+          }
+        ]
+      }
+    ]
+    </script>
 </head>
+
 <body class="bg-bglight text-textdark font-sans antialiased">
 
     <!-- Navbar -->
-    <header x-data="{ open: false, scrolled: false }" 
-            @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false"
-            :class="{ 'bg-white shadow-md': scrolled, 'bg-transparent': !scrolled }"
-            class="fixed w-full top-0 z-50 transition-all duration-300">
+    <header x-data="{ open: false, scrolled: false }"
+        @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false"
+        :class="{ 'shadow-md': scrolled, 'shadow-sm': !scrolled }"
+        class="fixed w-full top-0 z-50 transition-all duration-300 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="#" class="flex items-center gap-2">
-                        <img src="/assets/img/logo.png" alt="techSever Logo" class="h-8 w-auto" onerror="this.src='https://placehold.co/150x40/000/FFF?text=techSever'">
+                        <img src="/assets/img/logo.png" alt="Logotipo techSever - Agência de Marketing Digital" class="h-[50px] md:h-[60px] w-auto p-1"
+                            onerror="this.src='https://placehold.co/150x40/000/FFF?text=techSever'">
                     </a>
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8 items-center">
-                    <a href="#servicos" class="text-textdark font-medium hover:text-secondary transition-colors">Serviços</a>
-                    <a href="#sobre" class="text-textdark font-medium hover:text-secondary transition-colors">Quem Somos</a>
+                    <a href="#servicos"
+                        class="text-textdark font-medium hover:text-secondary transition-colors">Serviços</a>
+                    <a href="#sobre" class="text-textdark font-medium hover:text-secondary transition-colors">Quem
+                        Somos</a>
                     <a href="#faq" class="text-textdark font-medium hover:text-secondary transition-colors">FAQ</a>
-                    <a href="#contato" class="text-textdark font-medium hover:text-secondary transition-colors">Contato</a>
-                    <a href="https://wa.me/32468010830" target="_blank" class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-black/80 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Falar no WhatsApp</a>
+                    <a href="#contato"
+                        class="text-textdark font-medium hover:text-secondary transition-colors">Contato</a>
+                    <a href="https://wa.me/32468010830" target="_blank"
+                        class="bg-secondary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Falar
+                        no WhatsApp</a>
                 </nav>
 
                 <!-- Mobile Menu Button -->
@@ -82,22 +294,24 @@
         </div>
 
         <!-- Mobile Menu Panel -->
-        <div x-show="open" 
-             x-transition:enter="transition ease-out duration-200"
-             x-transition:enter-start="opacity-0 -translate-y-4"
-             x-transition:enter-end="opacity-100 translate-y-0"
-             x-transition:leave="transition ease-in duration-150"
-             x-transition:leave-start="opacity-100 translate-y-0"
-             x-transition:leave-end="opacity-0 -translate-y-4"
-             class="md:hidden bg-white shadow-xl absolute w-full"
-             x-cloak>
+        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4" class="md:hidden bg-white shadow-xl absolute w-full"
+            x-cloak>
             <div class="px-4 pt-2 pb-6 space-y-1">
-                <a href="#servicos" @click="open = false" class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">Serviços</a>
-                <a href="#sobre" @click="open = false" class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">Quem Somos</a>
-                <a href="#faq" @click="open = false" class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">FAQ</a>
-                <a href="#contato" @click="open = false" class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">Contato</a>
+                <a href="#servicos" @click="open = false"
+                    class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">Serviços</a>
+                <a href="#sobre" @click="open = false"
+                    class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">Quem Somos</a>
+                <a href="#faq" @click="open = false"
+                    class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">FAQ</a>
+                <a href="#contato" @click="open = false"
+                    class="block px-3 py-3 text-base font-medium text-textdark border-b border-gray-100">Contato</a>
                 <div class="mt-4 px-3">
-                    <a href="https://wa.me/32468010830" target="_blank" class="block w-full text-center bg-primary text-white px-6 py-3 rounded-md font-semibold">Falar no WhatsApp</a>
+                    <a href="https://wa.me/32468010830" target="_blank"
+                        class="block w-full text-center bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition-colors">Falar
+                        no WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -108,24 +322,31 @@
         <section id="hero" class="relative pt-32 pb-40 lg:pt-48 lg:pb-56 overflow-hidden">
             <!-- Background Image with Overlay -->
             <div class="absolute inset-0 z-0">
-                <img src="/assets/img/hero-bg.webp" alt="Marketing Digital" class="w-full h-full object-cover object-center" loading="lazy" onerror="this.src='https://placehold.co/1920x800/111827/333?text=Hero+Image'">
+                <img src="/assets/img/hero-bg.webp" alt="Estratégias de Marketing Digital e Crescimento Online"
+                    class="w-full h-full object-cover object-center" fetchpriority="high"
+                    onerror="this.src='https://placehold.co/1920x800/111827/333?text=Hero+Image'">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/90 to-black/60"></div>
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
                 <div class="max-w-3xl">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
-                        Marketing Digital em São Paulo para empresas que querem crescer
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
+                        Marketing Digital para empresas que querem crescer
                     </h1>
                     <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-                        A techSever desenvolve soluções de marketing digital para empresas e profissionais que querem fortalecer sua presença online e conquistar novas oportunidades. Atendemos clientes em São Paulo e em diferentes partes do mundo, com foco especial no Brasil e na Europa.
+                        A techSever desenvolve soluções de marketing digital para empresas e profissionais que querem
+                        fortalecer sua presença online e conquistar novas oportunidades. Atendemos clientes em
+                        diferentes partes do mundo, com foco especial no Brasil e na Europa.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://wa.me/32468010830" target="_blank" class="bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors shadow-lg flex items-center justify-center gap-2">
+                        <a href="https://wa.me/32468010830" target="_blank"
+                            class="bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors shadow-lg flex items-center justify-center gap-2">
                             Falar no WhatsApp
                             <i class="ph-bold ph-whatsapp-logo text-xl"></i>
                         </a>
-                        <a href="#servicos" class="bg-white text-textdark px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg flex items-center justify-center gap-2">
+                        <a href="#servicos"
+                            class="bg-white text-textdark px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg flex items-center justify-center gap-2">
                             Conhecer nossos serviços
                         </a>
                     </div>
@@ -142,35 +363,43 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Item -->
                     <div class="flex flex-col gap-3">
-                        <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
-                            <i class="ph ph-arrows-out-line text-2xl"></i>
+                        <div
+                            class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
+                            <i class="ph ph-sliders text-2xl"></i>
                         </div>
                         <h3 class="font-bold text-lg text-primary">Flexibilidade para cada projeto</h3>
-                        <p class="text-graymuted text-sm leading-relaxed">Soluções adaptadas às necessidades do seu negócio.</p>
+                        <p class="text-graymuted text-sm leading-relaxed">Soluções adaptadas às necessidades do seu
+                            negócio.</p>
                     </div>
                     <!-- Item -->
                     <div class="flex flex-col gap-3">
-                        <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
+                        <div
+                            class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
                             <i class="ph ph-medal text-2xl"></i>
                         </div>
                         <h3 class="font-bold text-lg text-primary">Qualidade no desenvolvimento</h3>
-                        <p class="text-graymuted text-sm leading-relaxed">Projetos pensados para unir desempenho, comunicação e presença digital.</p>
+                        <p class="text-graymuted text-sm leading-relaxed">Projetos pensados para unir desempenho,
+                            comunicação e presença digital.</p>
                     </div>
                     <!-- Item -->
                     <div class="flex flex-col gap-3">
-                        <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
+                        <div
+                            class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
                             <i class="ph ph-rocket-launch text-2xl"></i>
                         </div>
                         <h3 class="font-bold text-lg text-primary">Rapidez na entrega</h3>
-                        <p class="text-graymuted text-sm leading-relaxed">Processos objetivos para colocar seu projeto no ar com agilidade.</p>
+                        <p class="text-graymuted text-sm leading-relaxed">Processos objetivos para colocar seu projeto
+                            no ar com agilidade.</p>
                     </div>
                     <!-- Item -->
                     <div class="flex flex-col gap-3">
-                        <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
+                        <div
+                            class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center text-secondary mb-2">
                             <i class="ph ph-globe-hemisphere-west text-2xl"></i>
                         </div>
                         <h3 class="font-bold text-lg text-primary">Atendimento global</h3>
-                        <p class="text-graymuted text-sm leading-relaxed">Atendimento mundial, com foco principal em clientes do Brasil e da Europa.</p>
+                        <p class="text-graymuted text-sm leading-relaxed">Atendimento mundial, com foco principal em
+                            clientes do Brasil e da Europa.</p>
                     </div>
                 </div>
             </div>
@@ -182,26 +411,35 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <div class="w-full rounded-2xl overflow-hidden shadow-card">
-                            <img src="/assets/img/sobre.webp" alt="Quem Somos techSever" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x600/eee/999?text=Imagem+Sobre'">
+                            <img src="/assets/img/sobre.webp" alt="Equipe da techSever trabalhando em soluções de marketing digital"
+                                class="w-full h-auto object-cover" loading="lazy"
+                                onerror="this.src='https://placehold.co/800x600/eee/999?text=Imagem+Sobre'">
                         </div>
                     </div>
                     <div>
-                        <span class="text-secondary font-bold uppercase tracking-wider text-sm mb-4 block">Quem Somos</span>
+                        <span class="text-secondary font-bold uppercase tracking-wider text-sm mb-4 block">Quem
+                            Somos</span>
                         <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-6 leading-tight">
                             Marketing Digital com soluções sob medida
                         </h2>
                         <div class="space-y-4 text-graymuted text-lg mb-8">
                             <p>
-                                A techSever é uma empresa de marketing digital que desenvolve soluções para empresas, profissionais e marcas que precisam de uma presença digital mais profissional e estratégica.
+                                A techSever é uma empresa de marketing digital que desenvolve soluções para empresas,
+                                profissionais e marcas que precisam de uma presença digital mais profissional e
+                                estratégica.
                             </p>
                             <p>
-                                Trabalhamos com criação de sites, SEO, otimização de sites, edição de vídeo e social media, combinando diferentes serviços de acordo com os objetivos de cada projeto.
+                                Trabalhamos com criação de sites, SEO, otimização de sites, edição de vídeo e social
+                                media, combinando diferentes serviços de acordo com os objetivos de cada projeto.
                             </p>
                             <p>
-                                Nossa atuação parte de três princípios: <strong>flexibilidade, qualidade e rapidez</strong>. Em vez de oferecer soluções genéricas, buscamos entender cada necessidade e desenvolver um projeto adequado ao negócio.
+                                Nossa atuação parte de três princípios: <strong>flexibilidade, qualidade e
+                                    rapidez</strong>. Em vez de oferecer soluções genéricas, buscamos entender cada
+                                necessidade e desenvolver um projeto adequado ao negócio.
                             </p>
                         </div>
-                        <a href="https://wa.me/32468010830" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-black/80 transition-colors shadow-lg">
+                        <a href="https://wa.me/32468010830" target="_blank"
+                            class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-black/80 transition-colors shadow-lg">
                             Fale conosco
                             <i class="ph-bold ph-arrow-right"></i>
                         </a>
@@ -222,80 +460,109 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                     <!-- Card 1 -->
-                    <div class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
-                        <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                    <div
+                        class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
                             <i class="ph ph-desktop text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-primary mb-4">Criação de Sites</h3>
                         <p class="text-graymuted mb-4 leading-relaxed">
-                            Criamos sites profissionais, modernos e personalizados para empresas e profissionais que querem apresentar seus serviços com credibilidade na internet.
+                            Criamos sites profissionais, modernos e personalizados para empresas e profissionais que
+                            querem apresentar seus serviços com credibilidade na internet.
                         </p>
                         <p class="text-graymuted mb-8 leading-relaxed">
-                            O projeto é desenvolvido de acordo com a identidade e os objetivos do negócio, priorizando uma presença digital clara e profissional.
+                            O projeto é desenvolvido de acordo com a identidade e os objetivos do negócio, priorizando
+                            uma presença digital clara e profissional.
                         </p>
-                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Criação de Sites." target="_blank" class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
+                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Criação de Sites."
+                            target="_blank"
+                            class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
                             Falar no WhatsApp <i class="ph-bold ph-arrow-right ml-2"></i>
                         </a>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
-                        <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                    <div
+                        class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
                             <i class="ph ph-magnifying-glass text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-primary mb-4">Otimização de Sites SEO</h3>
                         <p class="text-graymuted mb-4 leading-relaxed">
-                            A otimização de sites SEO ajuda sua empresa a melhorar sua presença nos mecanismos de busca e aumentar as oportunidades de ser encontrada por potenciais clientes.
+                            A otimização de sites SEO ajuda sua empresa a melhorar sua presença nos mecanismos de busca
+                            e aumentar as oportunidades de ser encontrada por potenciais clientes.
                         </p>
                         <p class="text-graymuted mb-8 leading-relaxed">
-                            Analisamos os elementos do site para trabalhar sua estrutura, conteúdo e presença orgânica de forma mais estratégica.
+                            Analisamos os elementos do site para trabalhar sua estrutura, conteúdo e presença orgânica
+                            de forma mais estratégica.
                         </p>
-                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Otimização de Sites SEO." target="_blank" class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
+                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Otimização de Sites SEO."
+                            target="_blank"
+                            class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
                             Falar no WhatsApp <i class="ph-bold ph-arrow-right ml-2"></i>
                         </a>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
-                        <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                    <div
+                        class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
                             <i class="ph ph-video-camera text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-primary mb-4">Edição de Vídeo</h3>
                         <p class="text-graymuted mb-4 leading-relaxed">
-                            Transformamos vídeos brutos em conteúdos mais profissionais e adequados para comunicação digital, empresas, marcas e influenciadores.
+                            Transformamos vídeos brutos em conteúdos mais profissionais e adequados para comunicação
+                            digital, empresas, marcas e influenciadores.
                         </p>
                         <p class="text-graymuted mb-8 leading-relaxed">
-                            A edição é direcionada ao objetivo de cada conteúdo, seja divulgação, apresentação de produtos, redes sociais ou comunicação de marca.
+                            A edição é direcionada ao objetivo de cada conteúdo, seja divulgação, apresentação de
+                            produtos, redes sociais ou comunicação de marca.
                         </p>
-                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Edição de Vídeo." target="_blank" class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
+                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Edição de Vídeo."
+                            target="_blank"
+                            class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
                             Falar no WhatsApp <i class="ph-bold ph-arrow-right ml-2"></i>
                         </a>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
-                        <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                    <div
+                        class="bg-bglight rounded-2xl p-8 lg:p-10 border border-gray-100 hover:shadow-card transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
                             <i class="ph ph-share-network text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-primary mb-4">Social Media</h3>
                         <p class="text-graymuted mb-4 leading-relaxed">
-                            Criamos e organizamos conteúdos para redes sociais com foco em fortalecer a presença digital de empresas, marcas e profissionais.
+                            Criamos e organizamos conteúdos para redes sociais com foco em fortalecer a presença digital
+                            de empresas, marcas e profissionais.
                         </p>
                         <p class="text-graymuted mb-8 leading-relaxed">
                             O trabalho pode ser adaptado à identidade da marca e aos canais utilizados pelo negócio.
                         </p>
-                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Social Media." target="_blank" class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
+                        <a href="https://wa.me/32468010830?text=Olá, gostaria de falar sobre Social Media."
+                            target="_blank"
+                            class="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors">
                             Falar no WhatsApp <i class="ph-bold ph-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="text-center max-w-3xl mx-auto bg-primary text-white p-10 md:p-12 rounded-3xl relative overflow-hidden">
-                    <div class="absolute inset-0 bg-[url('https://placehold.co/1000x300/111/222')] opacity-10 bg-cover bg-center"></div>
+                <div
+                    class="text-center max-w-3xl mx-auto bg-primary text-white p-10 md:p-12 rounded-3xl relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-[url('https://placehold.co/1000x300/111/222')] opacity-10 bg-cover bg-center">
+                    </div>
                     <div class="relative z-10">
-                        <h3 class="text-2xl font-bold mb-4">Precisa de uma solução específica ou de uma combinação de serviços?</h3>
-                        <p class="text-gray-300 mb-8 text-lg">Vamos entender seu projeto e indicar o caminho mais adequado.</p>
-                        <a href="https://wa.me/32468010830" target="_blank" class="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-colors shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4">Precisa de uma solução específica ou de uma combinação de
+                            serviços?</h3>
+                        <p class="text-gray-300 mb-8 text-lg">Vamos entender seu projeto e indicar o caminho mais
+                            adequado.</p>
+                        <a href="https://wa.me/32468010830" target="_blank"
+                            class="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-colors shadow-lg">
                             Falar com a techSever no WhatsApp
                         </a>
                     </div>
@@ -311,56 +578,72 @@
                         Por que escolher a techSever?
                     </h2>
                 </div>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Item -->
                     <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-4">
                         <div class="flex-shrink-0 text-secondary mt-1">
-                            <i class="ph-fill ph-check-circle text-2xl"></i>
+                            <i class="ph-fill ph-sliders text-2xl"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-primary mb-2">Alta flexibilidade</h3>
-                            <p class="text-graymuted leading-relaxed">Cada projeto possui necessidades diferentes. Por isso, adaptamos nossas soluções ao contexto, objetivos e prioridades de cada cliente.</p>
+                            <p class="text-graymuted leading-relaxed">Cada projeto possui necessidades diferentes. Por
+                                isso, adaptamos nossas soluções ao contexto, objetivos e prioridades de cada cliente.
+                            </p>
                         </div>
                     </div>
                     <!-- Item -->
                     <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-4">
                         <div class="flex-shrink-0 text-secondary mt-1">
-                            <i class="ph-fill ph-check-circle text-2xl"></i>
+                            <i class="ph-fill ph-medal text-2xl"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-primary mb-2">Qualidade no desenvolvimento</h3>
-                            <p class="text-graymuted leading-relaxed">Buscamos entregar produtos digitais bem estruturados, profissionais e alinhados à finalidade do projeto.</p>
+                            <p class="text-graymuted leading-relaxed">Buscamos entregar produtos digitais bem
+                                estruturados, profissionais e alinhados à finalidade do projeto.</p>
                         </div>
                     </div>
                     <!-- Item -->
                     <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-4">
                         <div class="flex-shrink-0 text-secondary mt-1">
-                            <i class="ph-fill ph-check-circle text-2xl"></i>
+                            <i class="ph-fill ph-rocket-launch text-2xl"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-primary mb-2">Rapidez na entrega</h3>
-                            <p class="text-graymuted leading-relaxed">Trabalhamos com processos objetivos para desenvolver e entregar os projetos com agilidade, sem deixar de lado a qualidade.</p>
+                            <p class="text-graymuted leading-relaxed">Trabalhamos com processos objetivos para
+                                desenvolver e entregar os projetos com agilidade, sem deixar de lado a qualidade.</p>
                         </div>
                     </div>
                     <!-- Item -->
                     <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-4">
                         <div class="flex-shrink-0 text-secondary mt-1">
-                            <i class="ph-fill ph-check-circle text-2xl"></i>
+                            <i class="ph-fill ph-puzzle-piece text-2xl"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-primary mb-2">Soluções personalizadas</h3>
-                            <p class="text-graymuted leading-relaxed">Em vez de aplicar uma solução única para todos, desenvolvemos o trabalho de acordo com o que sua empresa realmente precisa.</p>
+                            <p class="text-graymuted leading-relaxed">Em vez de aplicar uma solução única para todos,
+                                desenvolvemos o trabalho de acordo com o que sua empresa realmente precisa.</p>
                         </div>
                     </div>
                     <!-- Item -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-4 md:col-span-2 lg:col-span-1">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-4">
                         <div class="flex-shrink-0 text-secondary mt-1">
-                            <i class="ph-fill ph-check-circle text-2xl"></i>
+                            <i class="ph-fill ph-globe-hemisphere-west text-2xl"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-primary mb-2">Atendimento internacional</h3>
-                            <p class="text-graymuted leading-relaxed">A techSever atende clientes em diferentes localidades, com atuação mundial e foco principal no Brasil e na Europa.</p>
+                            <p class="text-graymuted leading-relaxed">A techSever atende clientes em diferentes
+                                localidades, com atuação mundial e foco principal no Brasil e na Europa.</p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-4">
+                        <div class="flex-shrink-0 text-secondary mt-1">
+                            <i class="ph-fill ph-chart-line-up text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-2">Foco em Resultados</h3>
+                            <p class="text-graymuted leading-relaxed">Nossas estratégias são desenhadas para atrair o público certo, gerar engajamento e maximizar o retorno do seu investimento digital.</p>
                         </div>
                     </div>
                 </div>
@@ -380,61 +663,73 @@
                 <div class="relative">
                     <!-- Line separator for desktop -->
                     <div class="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-gray-100"></div>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4 relative z-10">
                         <!-- Step 1 -->
                         <div class="text-center relative">
-                            <div class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
+                            <div
+                                class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
                                 1
                             </div>
                             <h3 class="text-lg font-bold text-primary mb-2">Fale conosco</h3>
-                            <p class="text-sm text-graymuted">Entre em contato pelo WhatsApp e conte o que sua empresa precisa. Você pode solicitar um site, SEO, edição de vídeo, social media ou uma combinação de serviços.</p>
+                            <p class="text-sm text-graymuted">Entre em contato pelo WhatsApp e conte o que sua empresa
+                                precisa. Você pode solicitar um site, SEO, edição de vídeo, social media ou uma
+                                combinação de serviços.</p>
                         </div>
                         <!-- Step 2 -->
                         <div class="text-center relative">
-                            <div class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
+                            <div
+                                class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
                                 2
                             </div>
                             <h3 class="text-lg font-bold text-primary mb-2">Entendemos seu projeto</h3>
-                            <p class="text-sm text-graymuted">Conversamos sobre seus objetivos, necessidades e prioridades para entender qual solução faz mais sentido para o seu negócio.</p>
+                            <p class="text-sm text-graymuted">Conversamos sobre seus objetivos, necessidades e
+                                prioridades para entender qual solução faz mais sentido para o seu negócio.</p>
                         </div>
                         <!-- Step 3 -->
                         <div class="text-center relative">
-                            <div class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
+                            <div
+                                class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
                                 3
                             </div>
                             <h3 class="text-lg font-bold text-primary mb-2">Definimos a solução</h3>
-                            <p class="text-sm text-graymuted">A partir das informações do projeto, alinhamos o escopo do trabalho e os próximos passos.</p>
+                            <p class="text-sm text-graymuted">A partir das informações do projeto, alinhamos o escopo do
+                                trabalho e os próximos passos.</p>
                         </div>
                         <!-- Step 4 -->
                         <div class="text-center relative">
-                            <div class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
+                            <div
+                                class="w-20 h-20 bg-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-secondary text-2xl font-bold mx-auto mb-6">
                                 4
                             </div>
                             <h3 class="text-lg font-bold text-primary mb-2">Desenvolvemos o projeto</h3>
-                            <p class="text-sm text-graymuted">Nossa equipe trabalha na solução definida, buscando qualidade, organização e agilidade durante o desenvolvimento.</p>
+                            <p class="text-sm text-graymuted">Nossa equipe trabalha na solução definida, buscando
+                                qualidade, organização e agilidade durante o desenvolvimento.</p>
                         </div>
                         <!-- Step 5 -->
                         <div class="text-center relative">
-                            <div class="w-20 h-20 bg-primary text-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                            <div
+                                class="w-20 h-20 bg-primary text-white border-4 border-bglight shadow-sm rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                                 5
                             </div>
                             <h3 class="text-lg font-bold text-primary mb-2">Entregamos</h3>
-                            <p class="text-sm text-graymuted">Após a conclusão, você recebe o projeto desenvolvido de acordo com o que foi combinado.</p>
+                            <p class="text-sm text-graymuted">Após a conclusão, você recebe o projeto desenvolvido de
+                                acordo com o que foi combinado.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center mt-16">
-                    <a href="https://wa.me/32468010830" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-black/80 transition-colors shadow-lg">
+                    <a href="https://wa.me/32468010830" target="_blank"
+                        class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-black/80 transition-colors shadow-lg">
                         Quero falar sobre meu projeto
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- 7. Depoimentos -->
-        <section id="depoimentos" class="py-24 bg-bglight border-t border-gray-200">
+        <!-- 7. Depoimentos (Oculto temporariamente) -->
+        <section id="depoimentos" class="hidden py-24 bg-bglight border-t border-gray-200">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="mb-8 flex justify-center text-gray-300">
                     <i class="ph-fill ph-quotes text-6xl"></i>
@@ -447,29 +742,35 @@
                         A techSever ainda não possui depoimentos públicos cadastrados para apresentar nesta seção.
                     </p>
                     <p>
-                        Por isso, não usamos avaliações ou nomes fictícios para criar uma falsa prova social. Nossa prioridade é construir projetos reais e, com a autorização dos clientes, transformar essas experiências em novos depoimentos.
+                        Por isso, não usamos avaliações ou nomes fictícios para criar uma falsa prova social. Nossa
+                        prioridade é construir projetos reais e, com a autorização dos clientes, transformar essas
+                        experiências em novos depoimentos.
                     </p>
                 </div>
-                <a href="#servicos" class="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-sm hover:shadow-lg">
+                <a href="#servicos"
+                    class="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-sm hover:shadow-lg">
                     Conhecer nossas soluções
                 </a>
             </div>
         </section>
 
-        <!-- 8. Área de Atuação -->
-        <section id="area-atuacao" class="py-24 bg-white">
+        <!-- 8. Área de Atuação (Oculto temporariamente) -->
+        <section id="area-atuacao" class="hidden py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-6 leading-tight">
-                            Marketing Digital em São Paulo e atendimento mundial
+                            Marketing Digital com atendimento mundial
                         </h2>
                         <div class="space-y-4 text-graymuted text-lg mb-10">
                             <p>
-                                A techSever está localizada em São Paulo, SP, e oferece serviços de marketing digital para empresas e profissionais em diferentes localidades.
+                                A techSever oferece serviços de marketing digital
+                                para empresas e profissionais em diferentes localidades.
                             </p>
                             <p>
-                                Além do atendimento no Brasil, trabalhamos com clientes de outras regiões do mundo, com foco especial na Europa. Nossa atuação inclui criação de sites, SEO, otimização de sites, edição de vídeo e social media.
+                                Além do atendimento no Brasil, trabalhamos com clientes de outras regiões do mundo, com
+                                foco especial na Europa. Nossa atuação inclui criação de sites, SEO, otimização de
+                                sites, edição de vídeo e social media.
                             </p>
                         </div>
 
@@ -479,8 +780,8 @@
                                     <i class="ph-fill ph-map-pin text-xl"></i>
                                 </div>
                                 <div>
-                                    <p class="font-bold text-primary">Endereço:</p>
-                                    <p class="text-graymuted">Celia Domingues Faustino, 89 — São Paulo, SP — Brasil</p>
+                                    <p class="font-bold text-primary">Atendimento:</p>
+                                    <p class="text-graymuted">100% Remoto — Brasil e Mundo</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -504,16 +805,19 @@
                         </div>
 
                         <div class="mt-10">
-                            <a href="https://wa.me/32468010830" target="_blank" class="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-colors shadow-lg">
+                            <a href="https://wa.me/32468010830" target="_blank"
+                                class="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-colors shadow-lg">
                                 Falar pelo WhatsApp
                             </a>
                         </div>
                     </div>
                     <div>
                         <!-- Mapa Iframe -->
-                        <div class="w-full h-[500px] rounded-2xl overflow-hidden shadow-card bg-gray-100 flex items-center justify-center">
+                        <div
+                            class="w-full h-[500px] rounded-2xl overflow-hidden shadow-card bg-gray-100 flex items-center justify-center">
                             <!-- PLACEHOLDER DO MAPA: Substituir pelo iframe real do Google Maps -->
-                            <p class="text-gray-400 font-medium p-4 text-center">[Espaço reservado para Google Maps - Insira seu iframe aqui]</p>
+                            <p class="text-gray-400 font-medium p-4 text-center">[Espaço reservado para Google Maps -
+                                Insira seu iframe aqui]</p>
                         </div>
                     </div>
                 </div>
@@ -525,137 +829,174 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-6">
-                        Perguntas Frequentes sobre Marketing Digital em São Paulo
+                        Perguntas Frequentes sobre Marketing Digital
                     </h2>
                 </div>
 
                 <div class="space-y-4">
                     <!-- FAQ 1 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 1 ? active = 1 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
-                            <span class="font-bold text-primary text-lg pr-4">Quanto custa contratar uma empresa de marketing digital em São Paulo?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 1}"></i>
+                        <button @click="active !== 1 ? active = 1 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-primary text-lg pr-4">Quanto custa contratar uma empresa de
+                                marketing digital?</span>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 1}"></i>
                         </button>
                         <div x-show="active === 1" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                O investimento depende do serviço, da complexidade e das necessidades do projeto. Entre em contato pelo WhatsApp para explicar o que você precisa e receber uma avaliação do projeto.
+                                O investimento depende do serviço, da complexidade e das necessidades do projeto. Entre
+                                em contato pelo WhatsApp para explicar o que você precisa e receber uma avaliação do
+                                projeto.
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- FAQ 2 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 2 ? active = 2 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
-                            <span class="font-bold text-primary text-lg pr-4">Quanto custa criar um site profissional?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 2}"></i>
+                        <button @click="active !== 2 ? active = 2 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-primary text-lg pr-4">Quanto custa criar um site
+                                profissional?</span>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 2}"></i>
                         </button>
                         <div x-show="active === 2" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                Não existe um valor único para criação de sites, pois cada projeto possui necessidades diferentes. A techSever avalia o objetivo e o escopo antes de definir a solução.
+                                Não existe um valor único para criação de sites, pois cada projeto possui necessidades
+                                diferentes. A techSever avalia o objetivo e o escopo antes de definir a solução.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 3 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 3 ? active = 3 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
-                            <span class="font-bold text-primary text-lg pr-4">A techSever trabalha com SEO e otimização de sites?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 3}"></i>
+                        <button @click="active !== 3 ? active = 3 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-primary text-lg pr-4">A techSever trabalha com SEO e otimização
+                                de sites?</span>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 3}"></i>
                         </button>
                         <div x-show="active === 3" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                Sim. Trabalhamos com SEO e otimização de sites para melhorar a estrutura e a presença do site nos mecanismos de busca.
+                                Sim. Trabalhamos com SEO e otimização de sites para melhorar a estrutura e a presença do
+                                site nos mecanismos de busca.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 4 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 4 ? active = 4 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
-                            <span class="font-bold text-primary text-lg pr-4">A techSever atende apenas empresas de São Paulo?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 4}"></i>
+                        <button @click="active !== 4 ? active = 4 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-primary text-lg pr-4">A techSever atende empresas de quais regiões?</span>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 4}"></i>
                         </button>
                         <div x-show="active === 4" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                Não. Embora esteja localizada em São Paulo, a techSever realiza atendimento mundial, com foco principal no Brasil e na Europa.
+                                A techSever realiza atendimento mundial, com
+                                foco principal no Brasil e na Europa.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 5 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 5 ? active = 5 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
-                            <span class="font-bold text-primary text-lg pr-4">Vocês fazem edição de vídeos para redes sociais?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 5}"></i>
+                        <button @click="active !== 5 ? active = 5 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-primary text-lg pr-4">Vocês fazem edição de vídeos para redes
+                                sociais?</span>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 5}"></i>
                         </button>
                         <div x-show="active === 5" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                Sim. Realizamos edição de vídeo para empresas, marcas e influenciadores, de acordo com o objetivo e o formato de cada conteúdo.
+                                Sim. Realizamos edição de vídeo para empresas, marcas e influenciadores, de acordo com o
+                                objetivo e o formato de cada conteúdo.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 6 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 6 ? active = 6 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
-                            <span class="font-bold text-primary text-lg pr-4">O serviço de social media inclui criação de conteúdo?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 6}"></i>
+                        <button @click="active !== 6 ? active = 6 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-primary text-lg pr-4">O serviço de social media inclui criação
+                                de conteúdo?</span>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 6}"></i>
                         </button>
                         <div x-show="active === 6" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                Sim. A techSever trabalha com criação e gestão de conteúdo para redes sociais, adaptando o trabalho às necessidades e à identidade de cada cliente.
+                                Sim. A techSever trabalha com criação e gestão de conteúdo para redes sociais, adaptando
+                                o trabalho às necessidades e à identidade de cada cliente.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 7 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 7 ? active = 7 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
-                            <span class="font-bold text-primary text-lg pr-4">Quais formas de pagamento a techSever aceita?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 7}"></i>
+                        <button @click="active !== 7 ? active = 7 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-primary text-lg pr-4">Quais formas de pagamento a techSever
+                                aceita?</span>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 7}"></i>
                         </button>
                         <div x-show="active === 7" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                As condições e formas de pagamento são alinhadas de acordo com cada projeto. Consulte as opções disponíveis diretamente pelo WhatsApp.
+                                As condições e formas de pagamento são alinhadas de acordo com cada projeto. Consulte as
+                                opções disponíveis diretamente pelo WhatsApp.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 8 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 8 ? active = 8 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <button @click="active !== 8 ? active = 8 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
                             <span class="font-bold text-primary text-lg pr-4">Qual é o horário de atendimento?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 8}"></i>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 8}"></i>
                         </button>
                         <div x-show="active === 8" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                O horário de atendimento não está definido previamente. Para verificar a disponibilidade, entre em contato pelo WhatsApp.
+                                O horário de atendimento não está definido previamente. Para verificar a
+                                disponibilidade, entre em contato pelo WhatsApp.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 9 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 9 ? active = 9 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <button @click="active !== 9 ? active = 9 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
                             <span class="font-bold text-primary text-lg pr-4">Como posso contratar a techSever?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 9}"></i>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 9}"></i>
                         </button>
                         <div x-show="active === 9" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                É simples: clique no botão de WhatsApp e explique qual serviço você procura. A partir daí, podemos entender seu projeto e orientar sobre os próximos passos.
+                                É simples: clique no botão de WhatsApp e explique qual serviço você procura. A partir
+                                daí, podemos entender seu projeto e orientar sobre os próximos passos.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 10 -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="active !== 10 ? active = 10 : active = null" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <button @click="active !== 10 ? active = 10 : active = null"
+                            class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
                             <span class="font-bold text-primary text-lg pr-4">Qual é o diferencial da techSever?</span>
-                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300" :class="{'rotate-180': active === 10}"></i>
+                            <i class="ph-bold ph-caret-down text-secondary transition-transform duration-300"
+                                :class="{'rotate-180': active === 10}"></i>
                         </button>
                         <div x-show="active === 10" x-collapse x-cloak>
                             <div class="p-6 pt-0 text-graymuted">
-                                Nosso trabalho é baseado em alta flexibilidade, qualidade nos produtos desenvolvidos, rapidez na entrega e soluções personalizadas para cada cliente.
+                                Nosso trabalho é baseado em alta flexibilidade, qualidade nos produtos desenvolvidos,
+                                rapidez na entrega e soluções personalizadas para cada cliente.
                             </div>
                         </div>
                     </div>
@@ -665,42 +1006,50 @@
 
         <!-- 10. CTA Final / Contato -->
         <section id="contato" class="relative py-24 bg-primary text-white overflow-hidden">
-            <div class="absolute inset-0 bg-[url('https://placehold.co/1920x800/222/111')] opacity-20 bg-cover bg-center"></div>
+            <div
+                class="absolute inset-0 bg-[url('https://placehold.co/1920x800/222/111')] opacity-20 bg-cover bg-center">
+            </div>
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <h2 class="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
                     Vamos transformar sua presença digital em um projeto profissional?
                 </h2>
                 <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                    Se sua empresa precisa de um site, SEO, conteúdo para redes sociais ou edição de vídeo, fale com a techSever.
+                    Se sua empresa precisa de um site, SEO, conteúdo para redes sociais ou edição de vídeo, fale com a
+                    techSever.
                 </p>
                 <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-                    Explique o que você precisa pelo WhatsApp e vamos conversar sobre a melhor solução para o seu projeto.
+                    Explique o que você precisa pelo WhatsApp e vamos conversar sobre a melhor solução para o seu
+                    projeto.
                 </p>
-                
+
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-                    <a href="https://wa.me/32468010830" target="_blank" class="w-full sm:w-auto bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors shadow-lg flex items-center justify-center gap-2">
+                    <a href="https://wa.me/32468010830" target="_blank"
+                        class="w-full sm:w-auto bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors shadow-lg flex items-center justify-center gap-2">
                         Falar no WhatsApp
                         <i class="ph-bold ph-whatsapp-logo text-xl"></i>
                     </a>
-                    <a href="tel:32468010830" class="w-full sm:w-auto bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-colors border border-white/20 flex items-center justify-center gap-2">
+                    <a href="tel:32468010830"
+                        class="w-full sm:w-auto bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-colors border border-white/20 flex items-center justify-center gap-2">
                         Ligar agora
                         <i class="ph-bold ph-phone text-xl"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm text-left grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                    class="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm text-left grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Contato</p>
                         <p class="font-bold text-lg">32468010830</p>
                         <p class="text-gray-300">WhatsApp: 32468010830</p>
                     </div>
                     <div>
-                        <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Localização</p>
-                        <p class="font-bold text-lg">Celia Domingues Faustino, 89</p>
-                        <p class="text-gray-300">São Paulo, SP</p>
+                        <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Atendimento</p>
+                        <p class="font-bold text-lg">100% Remoto</p>
+                        <p class="text-gray-300">Brasil e Mundo</p>
                     </div>
                     <div class="md:col-span-2 pt-4 border-t border-white/10">
-                        <p class="text-gray-300 font-medium">Atendimento mundial, com foco principal no Brasil e na Europa.</p>
+                        <p class="text-gray-300 font-medium">Atendimento mundial, com foco principal no Brasil e na
+                            Europa.</p>
                         <p class="text-gray-400 mt-2 text-sm">Horário: Consulte disponibilidade pelo WhatsApp.</p>
                     </div>
                 </div>
@@ -714,19 +1063,24 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <!-- Marca -->
                 <div class="lg:col-span-1">
-                    <img src="/assets/img/logo.png" alt="techSever Logo" class="h-8 w-auto mb-6" onerror="this.src='https://placehold.co/150x40/000/FFF?text=techSever'">
+                    <img src="/assets/img/logo.png" alt="Logotipo techSever - Agência de Marketing Digital no Brasil" class="h-16 md:h-20 w-auto mb-6"
+                        onerror="this.src='https://placehold.co/150x40/000/FFF?text=techSever'">
                     <p class="text-primary font-bold mb-2">techSever — Marketing Digital</p>
-                    <p class="text-graymuted text-sm leading-relaxed">Desenvolvendo soluções digitais profissionais para empresas em São Paulo e no mundo.</p>
+                    <p class="text-graymuted text-sm leading-relaxed">Desenvolvendo soluções digitais profissionais para
+                        empresas no Brasil e no mundo.</p>
                 </div>
 
                 <!-- Navegação -->
                 <div>
                     <p class="font-bold text-primary mb-4">Navegação</p>
                     <ul class="space-y-3">
-                        <li><a href="#servicos" class="text-graymuted hover:text-secondary transition-colors">Serviços</a></li>
-                        <li><a href="#sobre" class="text-graymuted hover:text-secondary transition-colors">Quem Somos</a></li>
+                        <li><a href="#servicos"
+                                class="text-graymuted hover:text-secondary transition-colors">Serviços</a></li>
+                        <li><a href="#sobre" class="text-graymuted hover:text-secondary transition-colors">Quem
+                                Somos</a></li>
                         <li><a href="#faq" class="text-graymuted hover:text-secondary transition-colors">FAQ</a></li>
-                        <li><a href="#contato" class="text-graymuted hover:text-secondary transition-colors">Contato</a></li>
+                        <li><a href="#contato" class="text-graymuted hover:text-secondary transition-colors">Contato</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -736,7 +1090,7 @@
                     <ul class="space-y-3 text-graymuted">
                         <li>Telefone: 32468010830</li>
                         <li>WhatsApp: 32468010830</li>
-                        <li class="pt-2">Celia Domingues Faustino, 89<br>São Paulo, SP</li>
+                        <li class="pt-2">Atendimento 100% Remoto<br>Brasil e Mundo</li>
                         <li class="pt-2 text-sm">Horário: Consulte disponibilidade pelo WhatsApp.</li>
                     </ul>
                 </div>
@@ -744,7 +1098,8 @@
                 <!-- Redes Sociais -->
                 <div>
                     <p class="font-bold text-primary mb-4">Redes Sociais</p>
-                    <a href="https://instagram.com/techsev3r" target="_blank" class="inline-flex items-center gap-2 text-graymuted hover:text-secondary transition-colors">
+                    <a href="https://instagram.com/techsev3r" target="_blank"
+                        class="inline-flex items-center gap-2 text-graymuted hover:text-secondary transition-colors">
                         <i class="ph-fill ph-instagram-logo text-2xl"></i>
                         @techsev3r
                     </a>
@@ -763,9 +1118,12 @@
     </footer>
 
     <!-- Botão flutuante WhatsApp -->
-    <a href="https://wa.me/32468010830" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300" aria-label="Falar no WhatsApp">
+    <a href="https://wa.me/32468010830" target="_blank"
+        class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300"
+        aria-label="Falar no WhatsApp">
         <i class="ph-fill ph-whatsapp-logo text-3xl"></i>
     </a>
 
 </body>
+
 </html>
